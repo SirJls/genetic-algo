@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Individual.fs" />
+    <Compile Include="Logic.fs" />
+    <Compile Include="Algorithm.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
