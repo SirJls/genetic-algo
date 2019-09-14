@@ -29,7 +29,7 @@ let randomNextInt a b =
 
 let createPopulation n maxValueIndividual : Population =
     let f _ = Individual.Create ((randomNextInt 0 maxValueIndividual)())
-    Array.init n f 
+    Array.init n f
 
 let computeFitness f (i : Individual) : IndividualWithFitness =
     let fitness = f (float i.Number) in i,fitness
@@ -103,14 +103,3 @@ let mutation (a : Individual) rate =
     else
         a
 
-let printIndividual (a : string * float * Individual) =
-    let (d,s,i) = a
-    printfn "The heuristic solution to %s %.2f" d s
-    printfn "The final individual: %A" i
-    printfn "Integer representation: %d" i.Number
-    printfn "Binary representation: %s" i.Binary
-    printfn "Array representation: %A" i.BinaryArray
-    printfn "Length in base 16: %d" (i.Length 16)
-    printfn "Length in base 10: %d" (i.Length 10)
-    printfn "Length in base 8: %d" (i.Length 8)
-    printfn "Length in base 2: %d" (i.Length 2)

@@ -3,13 +3,14 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>genetic_algo</RootNamespace>
+    <RootNamespace>genetic-algo</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="Individual.fs" />
     <Compile Include="Logic.fs" />
     <Compile Include="Algorithm.fs" />
+    <Compile Include="Utils.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
